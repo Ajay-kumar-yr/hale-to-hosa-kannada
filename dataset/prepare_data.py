@@ -6,7 +6,7 @@ import os
 # --------------------------------------------------
 # 1. Load original datasets
 # --------------------------------------------------
-base_path = "sft_training_silver_high_precision"
+base_path = "dataset/original_datasets"
 
 train = pd.read_csv(
     f"{base_path}/train.csv",
@@ -129,7 +129,7 @@ test = test[
 # 8. Create output folder
 # --------------------------------------------------
 
-output_folder = "cleaned_datasets"
+output_folder = "dataset/cleaned_datasets"
 
 os.makedirs(output_folder, exist_ok=True)
 
